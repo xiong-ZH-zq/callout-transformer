@@ -1,2 +1,7 @@
+import argparse
+
 def main():
-    print("This is callout_transformer!")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("source_style", help="The source style of markdown callouts")
+
+    parser.parse_args()
